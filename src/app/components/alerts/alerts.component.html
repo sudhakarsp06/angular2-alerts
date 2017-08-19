@@ -1,0 +1,10 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div  class="alertsContainer">
+	<div class="alertsRow" *ngFor="let message of messages" [style.border]="message.styles.border" >
+
+		<div class="iconpanel" [style.backgroundColor]="message.styles.backgroundColor" ><i class="mat-icon material-icons">{{message.styles.icon}}</i></div>
+		<div class="messagepanel" [style.backgroundColor]="message.styles.fadebackgroundColor"	 [style.color]="message.styles.Color">{{message.message}}</div>
+		<a class="closeicon" [style.closeiconcolor]="message.styles.closeiconcolor" (click)="removeMessage(message)" href="#">X</a>
+  		
+  	</div>
+</div>

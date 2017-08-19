@@ -1,0 +1,8 @@
+<input #message type="text" />
+<select #type>
+  <option value="error">Error</option>
+  <option value="success">Success</option>
+  <option value="warn">Warning</option>
+</select>
+
+<input type="button" value="ShowMessage" (click)="SetMessage(message.value, type.value)" />
