@@ -22,6 +22,11 @@ this.alerts.setMessage(message, type);
 
 type can be 'error', 'success'  or 'warn'
 
+## Incude it in the HTML
+
+Open app.component.html file and add the below line
+<app-alerts></app-alerts>
+
 ## You can add more types
 
 Open the file '<path>/component/alerts/alerts.config.ts' and edit the lines under "AlertsConfigData". You can add more types and configure the alert popup colours and background colours here.
